@@ -1,0 +1,185 @@
+$primary-color: #4a90e2;
+$secondary-color: #f5a623;
+$text-color: #333;
+$light-bg: #f9f9f9;
+$card-bg: #ffffff;
+$cta-bg: linear-gradient(90deg, #4a90e2, #f5a623);
+
+.collaboration-page {
+    font-family: 'Arial', sans-serif;
+    color: $text-color;
+
+    .hero-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        background: $light-bg;
+
+        .hero-content {
+            max-width: 50%;
+
+            h1 {
+                font-size: 3rem;
+                color: $primary-color;
+            }
+
+            p {
+                margin: 1rem 0;
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+
+            .cta-button {
+                background: $cta-bg;
+                color: white;
+                padding: 15px 25px;
+                border: none;
+                border-radius: 8px;
+                font-weight: bold;
+                font-size: 16px;
+                cursor: pointer;
+                transition: transform 0.2s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .benefits-section {
+        padding: 2rem;
+        background: white;
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: $primary-color;
+        }
+
+        .benefits-grid {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+
+            .benefit-card {
+                background: $card-bg;
+                padding: 1.5rem;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.13);
+                text-align: center;
+                transition: box-shadow 0.3s ease;
+
+                img {
+                    max-width: 200px;
+                    margin-bottom: 1rem;
+                    border-radius: 10px;
+                    object-fit: cover;
+                    cursor: pointer;
+                    transition: transform 0.2s ease;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    color: $secondary-color;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+
+                &:hover {
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+
+    .how-to-section {
+        background: $light-bg;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .steps {
+            display: flex;
+            gap: 2rem;
+
+            .step {
+                flex: 1;
+                background: $card-bg;
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.13);
+                text-align: center;
+
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    transform: translateY(-5%);
+                }
+
+                span {
+                    display: inline-block;
+                    background: $primary-color;
+                    color: white;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    font-size: 1.2rem;
+                    margin-bottom: 1rem;
+                }
+
+                h3 {
+                    margin-bottom: 0.5rem;
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    .cta-section {
+        text-align: center;
+        padding: 15px;
+        background: $cta-bg;
+        color: white;
+        margin-top: 20px;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            background: white;
+            color: $primary-color;
+            font-weight: bold;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+
+            &:hover {
+                background: $secondary-color;
+                color: white;
+            }
+        }
+    }
+}

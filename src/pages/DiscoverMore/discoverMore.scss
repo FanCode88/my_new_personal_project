@@ -1,0 +1,139 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.discover-more {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(135deg, #ff7eb3, #8a2be2, #4facfe);
+        background-size: 300% 300%;
+        animation: gradient 10s ease infinite;
+
+        .hero-content {
+            max-width: 600px;
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+
+            .cta-button {
+                background: #00d8ff;
+                padding: 0.8rem 1.5rem;
+                color: #000;
+                border: none;
+                border-radius: 25px;
+                font-size: 1rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: background 0.3s ease;
+
+                &:hover {
+                    background: #00bfff;
+                }
+            }
+        }
+    }
+
+    .technologies {
+        padding: 2rem 2rem;
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #000;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+
+            .card {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 15px;
+                padding: 20px 10px;
+                text-align: center;
+                box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.33);
+                transition: transform 0.3s, background 0.3s;
+
+                &:hover {
+                    transform: translateY(-10px);
+                    background: rgba(255, 255, 255, 0.2);
+                }
+
+                img {
+                    width: 400px;
+                    height: 150px;
+                    border-radius: 10px;
+                    margin-bottom: 1rem;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    color: #000;
+                }
+
+                p {
+                    color: #000;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .future {
+        padding: 4rem 2rem;
+        text-align: center;
+        background: linear-gradient(135deg, #1c1c3c, #28365e);
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #bbb;
+        }
+
+        .future-cta .cta-button {
+            background: #00d8ff;
+            padding: 0.8rem 2rem;
+            color: #000;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: #00bfff;
+            }
+        }
+    }
+}

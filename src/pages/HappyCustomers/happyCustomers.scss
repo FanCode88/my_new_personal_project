@@ -1,0 +1,78 @@
+.happyCustomers {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.4) url(../../../public//assets/text.jpg);
+    background-blend-mode: overlay;
+
+    .container {
+        width: 500px;
+        height: 650px;
+        border-radius: 10px;
+        text-align: center;
+        background: #ffff;
+        padding: 30px;
+        cursor: default;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.13);
+
+        .boxMain {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                font-size: 36px;
+                letter-spacing: 1px;
+            }
+
+            .line {
+                width: 400px;
+                height: 5px;
+                border-radius: 5px;
+                background: orangered;
+                transition: 0.6s ease-in-out;
+
+                &:hover {
+                    transform: translateY(-10px);
+                }
+            }
+
+            .circle {
+                width: 240px;
+                height: 240px;
+                border-radius: 50%;
+                border: 5px solid orangered;
+                overflow: hidden;
+                margin-top: 40px;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    transition: 0.6s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            h2 {
+                font-size: 32px;
+                margin-top: 30px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+
+            .foot {
+                margin-top: 40px;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+}

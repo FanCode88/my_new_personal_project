@@ -1,0 +1,100 @@
+.home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background: rgb(2, 0, 36);
+    padding: 40px 0;
+    position: relative;
+}
+
+.homeContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        .container {
+            display: flex;
+
+            li a {
+                margin-left: 50px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 75px;
+                height: 25px;
+                padding: 15px;
+                color: lightcyan;
+                font-size: 19px;
+                font-weight: 500;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 5px;
+                z-index: 1;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: 5px;
+                    padding: 2px;
+                    background: linear-gradient(90deg, purple, orange, green);
+                    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                        linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+                    z-index: -1;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    h1 {
+        letter-spacing: 2px;
+        cursor: default;
+        font-size: 42px;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #8e44ad, #e74c3c, #2ecc71);
+        -webkit-background-clip: text;
+        color: transparent;
+        overflow: hidden;
+
+        &:hover {
+            color: transparent;
+            background-image: linear-gradient(
+                135deg,
+                #2ecc71,
+                #e74c3c,
+                #8e44ad
+            );
+        }
+    }
+
+    button {
+        padding: 15px 25px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        font-size: 19px;
+        font-weight: bold;
+        cursor: pointer;
+        color: lightcyan;
+        background: linear-gradient(45deg, #8e44ad, #e74c3c, #2ecc71);
+
+        &:hover {
+            background: linear-gradient(45deg, #27ae60, #e74c3c, #9b59b6);
+        }
+    }
+}

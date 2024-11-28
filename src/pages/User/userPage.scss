@@ -1,0 +1,79 @@
+.userPage {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right, red, yellow, orange, purple);
+
+    .wrapper {
+        background: #fdffcd;
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .avatar {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .iconButton {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 1px solid #000;
+                border-radius: 50%;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .iconImg {
+                font-size: 31px;
+                color: #000;
+            }
+        }
+
+        .context {
+            width: 400px;
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            cursor: default;
+
+            h2{
+                font-size: 34px;
+                color: #f7aa00;
+            }
+            p {
+                font-size: 18px;
+            }
+
+            .social {
+                display: flex;
+                margin-top: 20px;
+
+                .iconSocial {
+                    font-size: 32px;
+                    margin-left: 20px;
+                    transition: .3s ease-in-out;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: orangered ;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+             }
+    }
+
+}
