@@ -57,8 +57,6 @@ const Technology = () => {
                     </div>
                 </div>
             </section>
-
-
         </div>
     );
 };
