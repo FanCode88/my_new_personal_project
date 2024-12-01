@@ -17,7 +17,8 @@ $cta-bg: linear-gradient(90deg, #4a90e2, #f5a623);
         background: $light-bg;
 
         .hero-content {
-            max-width: 50%;
+            display: flex;
+            // max-width: 50%;
 
             h1 {
                 font-size: 3rem;
@@ -47,24 +48,24 @@ $cta-bg: linear-gradient(90deg, #4a90e2, #f5a623);
             }
         }
     }
+    h2 {
+        text-align: center;
+        font-size: 36px;
+    }
 
     .benefits-section {
-        padding: 2rem;
-        background: white;
+        display: flex;
+        padding: 30px;
+        gap: 20px;
         text-align: center;
 
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: $primary-color;
-        }
-
         .benefits-grid {
-            display: flex;
+            display: grid;
             gap: 1.5rem;
             justify-content: center;
 
             .benefit-card {
+                background: blueviolet;
                 background: $card-bg;
                 padding: 1.5rem;
                 border-radius: 10px;
@@ -73,7 +74,8 @@ $cta-bg: linear-gradient(90deg, #4a90e2, #f5a623);
                 transition: box-shadow 0.3s ease;
 
                 img {
-                    max-width: 200px;
+                    max-width: 300px;
+                    height: 150px;
                     margin-bottom: 1rem;
                     border-radius: 10px;
                     object-fit: cover;

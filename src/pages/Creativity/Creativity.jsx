@@ -2,18 +2,19 @@ import './creativity.scss';
 import image1 from '../../../public/assets/image1.jpg';
 import image2 from '../../../public/assets/image2.jpg';
 import image3 from '../../../public/assets/image3.jpg';
+import data from '../../pages/Creativity/data';
 
 const Creativity = () => {
+    const { intro, cta } = data;
+
     return (
         <div className="creativity">
-            <div className="intro">
-                <h1>Creativity Unleashed</h1>
-                <p>
-                    At the core of everything we do lies creativity. It’s the
-                    driving force that turns ideas into reality, making every
-                    project unique and impactful.
-                </p>
-            </div>
+            {intro.map((item) => (
+                <div key={item.id} className="intro">
+                    <h1>{item.title}</h1>
+                    <p>{item.desc}</p>
+                </div>
+            ))}
 
             <div className="gallery">
                 <h2>Our Creative Journey</h2>
@@ -43,14 +44,13 @@ const Creativity = () => {
                 </ol>
             </div>
 
-            <div className="cta">
-                <h2>Let’s Create Together</h2>
-                <p>
-                    Whether you’re envisioning a bold new project or refining an
-                    existing idea, we’re here to collaborate and make it happen.
-                </p>
-                <button className="cta-button">Get Started</button>
-            </div>
+            {cta.map((item) => (
+                <div key={item.id} className="cta">
+                    <h2>{item.title}</h2>
+                    <p>{item.desc}</p>
+                    <button className="cta-button">{item.btn}</button>
+                </div>
+            ))}
         </div>
     );
 };
