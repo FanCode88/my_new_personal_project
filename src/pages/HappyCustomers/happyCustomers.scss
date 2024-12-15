@@ -8,7 +8,7 @@
 
     .container {
         width: 500px;
-        height: 650px;
+        height: 700px;
         border-radius: 10px;
         text-align: center;
         background: #ffff;
@@ -20,6 +20,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 10px;
 
             h1 {
                 font-size: 36px;
@@ -72,6 +73,40 @@
                 margin-top: 40px;
                 font-weight: bold;
                 font-size: 16px;
+            }
+            .navigation {
+                display: flex;
+                gap: 250px;
+                margin-top: -20px;
+
+                .prev {
+                    display: flex;
+                    align-items: center;
+                    font-size: 54px;
+                    cursor: pointer;
+                    border: none;
+                    background: transparent;
+                }
+                .prev:hover {
+                    opacity: 0.6;
+                    background: rgba(128, 128, 128, 0.248);
+                    border-radius: 5px;
+                }
+
+                .next {
+                    display: flex;
+                    align-items: center;
+                    font-size: 54px;
+                    cursor: pointer;
+                    border: none;
+                    background: transparent;
+                }
+
+                .next:hover {
+                    opacity: 0.6;
+                    background: rgba(128, 128, 128, 0.248);
+                    border-radius: 5px;
+                }
             }
         }
     }
