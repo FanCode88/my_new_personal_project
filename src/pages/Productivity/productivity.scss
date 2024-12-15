@@ -1,34 +1,30 @@
-/* Culori principale */
-$primary-color: #4caf50;
-$secondary-color: #f4f4f4;
-$text-color: #333;
-$light-gray: #e0e0e0;
-
 .productivity-page {
     font-family: 'Arial', sans-serif;
-    color: $text-color;
+    color: #333;
 
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 2rem;
-        background-color: $primary-color;
+        background-color: #4caf50;
         color: white;
 
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
+            letter-spacing: 3px;
         }
 
         .nav a {
             color: white;
             text-decoration: none;
             margin: 0 1rem;
-            transition: color 0.3s;
+            transition: 0.4s;
+            font-weight: bold;
 
             &:hover {
-                color: $secondary-color;
+                color: #333;
             }
         }
     }
@@ -37,27 +33,30 @@ $light-gray: #e0e0e0;
         text-align: center;
         display: flex;
         justify-content: space-around;
-        background-color: $secondary-color;
+        background-color: #f4f4f4;
         padding: 3rem 1rem;
         height: 20px;
 
         h1 {
             font-size: 2.5rem;
-            color: $primary-color;
+            color: #4caf50;
+            letter-spacing: 4px;
         }
 
         .cta-button {
-            background-color: $primary-color;
+            background-color: #4caf50;
             color: white;
             padding: 0.8rem 2rem;
             border: none;
             border-radius: 5px;
             font-size: 1rem;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: 0.3s;
 
             &:hover {
-                background-color: darken($primary-color, 10%);
+                background-color: #4caf50;
+                opacity: 0.9;
+                color: #333;
             }
         }
     }
@@ -71,7 +70,7 @@ $light-gray: #e0e0e0;
         box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.13);
 
         h2 {
-            color: $primary-color;
+            color: #4caf50;
             font-size: 1.8rem;
             margin-bottom: 1rem;
         }
@@ -86,7 +85,7 @@ $light-gray: #e0e0e0;
             .tool,
             .technique {
                 padding: 20px;
-                border: 1px solid $light-gray;
+                border: 1px solid #e0e0e0;
                 border-radius: 5px;
                 text-align: center;
                 border-radius: 10px;
@@ -96,7 +95,7 @@ $light-gray: #e0e0e0;
                 h3 {
                     font-size: 1.2rem;
                     margin-bottom: 0.5rem;
-                    color: $primary-color;
+                    color: #4caf50;
                 }
             }
         }
@@ -113,7 +112,7 @@ $light-gray: #e0e0e0;
 
                 .author {
                     font-weight: bold;
-                    color: $primary-color;
+                    color: #4caf50;
                 }
             }
         }
