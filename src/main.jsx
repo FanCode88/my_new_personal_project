@@ -23,6 +23,8 @@ import Technology from './pages/Technology/Technology';
 import Collaboration from './pages/Collaboration/Collaboration';
 import DiscoverMore from './pages/DiscoverMore/DiscoverMore';
 import Productivity from './pages/Productivity/Productivity';
+import Tech from './pages/Tech/Tech';
+import Assets from './pages/Assets/Assets';
 
 const router = createBrowserRouter([
     {
@@ -99,6 +101,14 @@ const router = createBrowserRouter([
             {
                 path: '/services/inspired-design/productivity',
                 element: <Productivity />,
+            },
+            {
+                path: '/services/inspired-design/tech',
+                element: <Tech />,
+            },
+            {
+                path: '/services/inspired-design/assets',
+                element: <Assets />,
             },
         ],
     },

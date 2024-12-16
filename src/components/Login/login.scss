@@ -45,6 +45,9 @@ body {
             }
 
             .closeInput {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 font-size: 34px;
                 color: #5be7a9;
                 cursor: pointer;
