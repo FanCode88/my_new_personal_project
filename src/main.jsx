@@ -25,6 +25,7 @@ import DiscoverMore from './pages/DiscoverMore/DiscoverMore';
 import Productivity from './pages/Productivity/Productivity';
 import Tech from './pages/Tech/Tech';
 import Assets from './pages/Assets/Assets';
+import AInteligence from './pages/AI/AInteligence';
 
 const router = createBrowserRouter([
     {
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
             {
                 path: '/services/inspired-design/assets',
                 element: <Assets />,
+            },
+            {
+                path: '/services/inspired-design/ai',
+                element: <AInteligence />,
             },
         ],
     },
