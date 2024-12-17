@@ -26,6 +26,10 @@ import Productivity from './pages/Productivity/Productivity';
 import Tech from './pages/Tech/Tech';
 import Assets from './pages/Assets/Assets';
 import AInteligence from './pages/AI/AInteligence';
+import Web3 from './pages/Web3/Web3';
+import Demo from './pages/Demo/Demo';
+import Features from './pages/Features/Features';
+import Introduction from './pages/Introduction/Introduction';
 
 const router = createBrowserRouter([
     {
@@ -114,6 +118,22 @@ const router = createBrowserRouter([
             {
                 path: '/services/inspired-design/ai',
                 element: <AInteligence />,
+            },
+            {
+                path: '/services/inspired-design/web3',
+                element: <Web3 />,
+            },
+            {
+                path: '/services/inspired-design/web3/interactive',
+                element: <Demo />,
+            },
+            {
+                path: '/services/inspired-design/web3/features',
+                element: <Features />,
+            },
+            {
+                path: '/services/inspired-design/web3/introduction',
+                element: <Introduction />,
             },
         ],
     },
