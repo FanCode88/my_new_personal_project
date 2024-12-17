@@ -43,7 +43,7 @@ const ForgotPassword = () => {
                 </form>
                 <p>
                     <Link to="/login" className="signLogin">
-                        Back to <b className="bold">Sign In</b>{' '}
+                        Back to <b className="bold">Sign In</b>
                     </Link>
                 </p>
             </div>

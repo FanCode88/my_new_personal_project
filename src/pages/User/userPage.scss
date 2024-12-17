@@ -1,79 +1,120 @@
 .userPage {
     display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right, red, yellow, orange, purple);
+    background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+    color: #fff;
 
     .wrapper {
-        background: #fdffcd;
-        padding: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        .avatar {
-            position: relative;
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-
-            .iconButton {
-                position: absolute;
-                top: 80%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                border: 1px solid #000;
-                border-radius: 50%;
-                padding: 10px;
-                cursor: pointer;
-            }
-
-            .iconImg {
-                font-size: 31px;
-                color: #000;
-            }
-        }
-
-        .context {
-            width: 400px;
-            flex-direction: column;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 50px;
-            cursor: default;
-
-            h2{
-                font-size: 34px;
-                color: #f7aa00;
-            }
-            p {
-                font-size: 18px;
-            }
-
-            .social {
-                display: flex;
-                margin-top: 20px;
-
-                .iconSocial {
-                    font-size: 32px;
-                    margin-left: 20px;
-                    transition: .3s ease-in-out;
-                    cursor: pointer;
-                    text-decoration: none;
-                    color: orangered ;
-
-                    &:hover {
-                        transform: scale(1.2);
-                    }
-                }
-            }
-             }
+        max-width: 900px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
     }
 
+    .avatar {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #fff;
+        cursor: pointer;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        .iconButton {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            border: none;
+            border-radius: 50%;
+            padding: 8px;
+            cursor: pointer;
+
+            .iconImg {
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .context {
+        text-align: center;
+        margin-top: 20px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #e4e4e4;
+            letter-spacing: 3px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #c0c0c0;
+            line-height: 1.6;
+        }
+
+        .social {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+            .iconSocial {
+                font-size: 20px;
+                color: #c0c0c0;
+                transition: color 0.3s, transform 0.3s;
+                font-size: 25px;
+                margin-left: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #fff;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+
+        .statBox {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 15px 20px;
+            text-align: center;
+            color: #e4e4e4;
+            transition: transform 0.3s;
+            cursor: pointer;
+
+            h3 {
+                font-size: 18px;
+                margin-bottom: 5px;
+                color: #fff;
+            }
+
+            p {
+                font-size: 14px;
+                color: #c0c0c0;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
 }

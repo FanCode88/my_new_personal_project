@@ -28,19 +28,19 @@ const Home = () => {
                     <div className="container">
                         <motion.li
                             whileHover={{ scale: 1.2, rotate: 3 }}
-                            transition={{ type: "spring", stiffness: 300 }}
+                            transition={{ type: 'spring', stiffness: 300 }}
                         >
                             <Link to="/services">Services</Link>
                         </motion.li>
                         <motion.li
                             whileHover={{ scale: 1.2, rotate: 3 }}
-                            transition={{ type: "spring", stiffness: 300 }}
+                            transition={{ type: 'spring', stiffness: 300 }}
                         >
                             <Link to="/about">About</Link>
                         </motion.li>
                         <motion.li
                             whileHover={{ scale: 1.2, rotate: 3 }}
-                            transition={{ type: "spring", stiffness: 300 }}
+                            transition={{ type: 'spring', stiffness: 300 }}
                         >
                             <Link to="/contact">Contact</Link>
                         </motion.li>
@@ -55,8 +55,11 @@ const Home = () => {
                     >
                         <Link to="/login">
                             <motion.button
-                                whileHover={{ backgroundColor: "#ff758c", scale: 1.1 }}
-                                transition={{ type: "tween", duration: 0.3 }}
+                                whileHover={{
+                                    backgroundColor: '#ff758c',
+                                    scale: 1.1,
+                                }}
+                                transition={{ type: 'tween', duration: 0.3 }}
                             >
                                 JOIN US
                             </motion.button>
