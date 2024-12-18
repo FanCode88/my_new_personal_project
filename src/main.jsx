@@ -30,6 +30,8 @@ import Web3 from './pages/Web3/Web3';
 import Demo from './pages/Demo/Demo';
 import Features from './pages/Features/Features';
 import Introduction from './pages/Introduction/Introduction';
+import DesignTools from './pages/DesignTools/DesignTools';
+import DevelopmentTools from './pages/DevelopmentTools/DevelopmentTools';
 
 const router = createBrowserRouter([
     {
@@ -134,6 +136,14 @@ const router = createBrowserRouter([
             {
                 path: '/services/inspired-design/web3/introduction',
                 element: <Introduction />,
+            },
+            {
+                path: '/services/inspired-design/design-tools',
+                element: <DesignTools />,
+            },
+            {
+                path: '/services/inspired-design/development-tools',
+                element: <DevelopmentTools />,
             },
         ],
     },
