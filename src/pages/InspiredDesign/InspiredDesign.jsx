@@ -3,6 +3,7 @@ import './inspiredDesign.scss';
 import { Link } from 'react-router-dom';
 import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5';
 import article from '../../pages/InspiredDesign/articles';
+import image from '../../../public/assets/src.jpeg';
 
 const InspiredDesign = () => {
     const storedTheme = localStorage.getItem('theme');
@@ -44,6 +45,10 @@ const InspiredDesign = () => {
                         </li>
                     ))}
                 </ul>
+            </div>
+
+            <div className="boxContainer">
+                <img src={image} alt="" />
             </div>
             <div className="formBox">
                 <div className="formBoxBtn">
